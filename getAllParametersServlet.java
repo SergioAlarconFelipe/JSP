@@ -6,7 +6,6 @@ public ArrayList getAllParametersServlet (HttpServletRequest req) {
     while (parameterNames.hasMoreElements()) {
         String paramName = parameterNames.nextElement();
         array.add(paramName);
-
     }
 
     return array;
@@ -29,7 +28,6 @@ public void handleRequest(HttpServletRequest req, HttpServletResponse res) throw
                 out.write(" " + paramValue);
                 out.write(" ");
         }
-
     }
 
     out.close();
